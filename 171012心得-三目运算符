@@ -15,3 +15,10 @@ i == 0 ? j = 1 : j = 2;   or   i > 0 ? j = 1 : k = 2;
 	j = i == 3 ? 9 : 7;
 也可以：
 	i == 3 ? cout << "haha" << endl : cout << "lala" << endl;
+
+
+
+
+
+
+
