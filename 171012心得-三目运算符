@@ -1,0 +1,17 @@
+20171012	三目运算符（用？：代替if else）在Java 和 c++ 中的区别
+
+在java中不能在 ？ 后面跟赋值语句，而必须是一个直接返回值
+
+所以， i == 0 ? j = 1 : j = 2;   是错的
+只能这样：  j =  i == 0 ?  1 :  2;     //  j = 1 或 j = 2
+可以这样：
+System.out.println(i == 1 ? 4 : 5);    or    System.out.println(i == 1 ? “haha” : “yes”);
+System.out.println("wow" + (i == 1 ? “haha” : “yes”));
+
+
+而在c++ 中，可以直接：
+i == 0 ? j = 1 : j = 2;   or   i > 0 ? j = 1 : k = 2;
+也可以：
+	j = i == 3 ? 9 : 7;
+也可以：
+	i == 3 ? cout << "haha" << endl : cout << "lala" << endl;
