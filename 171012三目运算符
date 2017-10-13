@@ -16,6 +16,12 @@ i == 0 ? j = 1 : j = 2;   or   i > 0 ? j = 1 : k = 2;
 也可以：
 	i == 3 ? cout << "haha" << endl : cout << "lala" << endl;
 
+int max(int a, int b)   // 三目运算符
+{
+	int m;	
+	return (a > b ? m = a : m = b);    or  return (m = (a > b ? a : b));
+}
+
 
 
 
