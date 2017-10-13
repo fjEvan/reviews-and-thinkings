@@ -1,0 +1,15 @@
+171007  c++ 的 function 中设置参数默认值
+
+在function prototype中要写出参数默认的赋值
+在function定义中不写默认赋值，只写类型和变量
+void die(string descr, bool addsystem = true)； // 在function prototype写赋值
+
+void die(string descr, bool addsystem)     // 定义function时不写赋值
+{
+	cerr << descr;
+	if(addsystem) cerr << ": " << strerror(errno);
+	cerr << endl;
+	exit(2);
+}
+
+或者也可以直接把function写到main前面（不用function prototype）
